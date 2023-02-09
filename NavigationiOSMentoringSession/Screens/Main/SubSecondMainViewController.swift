@@ -9,6 +9,15 @@ final class SubSecondMainViewController: UIViewController {
     }
     
     @IBAction func logout(_ sender: Any) {
-        performSegue(withIdentifier: "toAuth", sender: self)
+        guard let window = view.window else { return }
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let authVC = storyboard.instantiateViewController(identifier: String(describing: AuthViewController.self))
+    
+        let authNavigationController = UINavigationController(rootViewController: authVC)
+        window.rootViewController = authNavigationController
+    }
+    
+    deinit {
+        print("deinited \(self)")
     }
 }

@@ -15,4 +15,8 @@ final class RegistrationViewController: UIViewController {
     @IBAction func backDidTap(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
+    
+    deinit {
+        print("deinited \(self)")
+    }
 }

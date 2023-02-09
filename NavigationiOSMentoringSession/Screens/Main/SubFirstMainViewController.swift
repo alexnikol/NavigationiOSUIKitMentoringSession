@@ -9,6 +9,12 @@ final class SubFirstMainViewController: UIViewController {
     }
     
     @IBAction func toNext(_ sender: Any) {
-        performSegue(withIdentifier: "subSecondSegue", sender: self)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let subSecondVC = storyboard.instantiateViewController(identifier: String(describing: SubSecondMainViewController.self))
+        navigationController?.pushViewController(subSecondVC, animated: true)
+    }
+    
+    deinit {
+        print("deinited \(self)")
     }
 }

@@ -10,15 +10,16 @@ final class MainViewController: UIViewController {
         navigationItem.title = "Main"
 //        navigationItem.hidesBackButton = true
         navigationController?.isNavigationBarHidden = false
-        navigationController?.viewControllers.removeSubrange(0..<2)
-        print("VCs \(navigationController?.viewControllers.count)")
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
-            print("VCs2 \(self.navigationController?.viewControllers.count)")
-        })
+        print("VCs \(navigationController?.viewControllers.count ?? 0)")
     }
     
     @IBAction func toNext(_ sender: Any) {
-        performSegue(withIdentifier: "subFirstSegue", sender: self)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let subFirstVC = storyboard.instantiateViewController(identifier: String(describing: SubFirstMainViewController.self))
+        navigationController?.pushViewController(subFirstVC, animated: true)
+    }
+    
+    deinit {
+        print("deinited \(self)")
     }
 }

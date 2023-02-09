@@ -6,14 +6,22 @@ final class AuthViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("VCs \(navigationController?.viewControllers.count)")
+        print("VCs \(navigationController?.viewControllers.count ?? 0)")
     }
     
     @IBAction func loginDidTap(_ sender: Any) {
-        performSegue(withIdentifier: "loginSegue", sender: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let loginVC = storyboard.instantiateViewController(identifier: "LoginViewController")
+        navigationController?.pushViewController(loginVC, animated: true)
     }
     
     @IBAction func registerDidTap(_ sender: Any) {
-        performSegue(withIdentifier: "registerSegue", sender: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let registerVC = storyboard.instantiateViewController(identifier: "RegistrationViewController")
+        navigationController?.pushViewController(registerVC, animated: true)
+    }
+    
+    deinit {
+        print("deinited \(self)")
     }
 }

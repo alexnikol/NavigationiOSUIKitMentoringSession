@@ -9,10 +9,19 @@ final class LoginViewController: UIViewController {
     }
     
     @IBAction func endLoginDidTap(_ sender: Any) {
-        performSegue(withIdentifier: "mainSegue", sender: self)
+        guard let window = view.window else { return }
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let mainVC = storyboard.instantiateViewController(identifier: String(describing: MainViewController.self))
+        let navigation = UINavigationController(rootViewController: mainVC)
+        window.rootViewController = navigation
     }
     
     @IBAction func backDidTap(_ sender: Any) {
         navigationController?.popViewController(animated: true)
+    }
+    
+    deinit {
+        print("deinited \(self)")
     }
 }

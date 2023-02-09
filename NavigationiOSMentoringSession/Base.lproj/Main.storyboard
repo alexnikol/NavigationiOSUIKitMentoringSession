@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fuG-hb-7hG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,27 +9,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="DzM-xg-hvu">
-            <objects>
-                <navigationController navigationBarHidden="YES" id="fuG-hb-7hG" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vvT-aB-yH7">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="L1k-P8-Qsg" kind="relationship" relationship="rootViewController" id="Ghf-CR-yun"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VGN-QK-cB1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-952" y="260"/>
-        </scene>
         <!--Auth View Controller-->
         <scene sceneID="0qP-12-vAN">
             <objects>
-                <viewController id="L1k-P8-Qsg" customClass="AuthViewController" customModule="NavigationiOSMentoringSession" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuthViewController" id="L1k-P8-Qsg" customClass="AuthViewController" customModule="NavigationiOSMentoringSession" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qNJ-js-CRu">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AUTH FLOW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWx-SS-GW6">
@@ -39,7 +24,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="PND-Nf-BxO">
-                                <rect key="frame" x="96.666666666666686" y="333" width="200" height="176"/>
+                                <rect key="frame" x="96.666666666666686" y="350.66666666666669" width="200" height="176.00000000000006"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0g-yk-QS7">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="80"/>
@@ -84,10 +69,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XAg-MQ-KPo"/>
-                    <connections>
-                        <segue destination="hWO-Ph-a3Y" kind="show" identifier="loginSegue" id="Nyu-DP-AxB"/>
-                        <segue destination="rDs-gt-dFz" kind="show" identifier="registerSegue" id="shQ-jL-bNK"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0wb-2J-gLL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -96,9 +77,9 @@
         <!--Main View Controller-->
         <scene sceneID="jZV-6j-vxQ">
             <objects>
-                <viewController id="3L2-Ra-mPh" customClass="MainViewController" customModule="NavigationiOSMentoringSession" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="3L2-Ra-mPh" customClass="MainViewController" customModule="NavigationiOSMentoringSession" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V8B-QJ-7oc">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAIN FLOW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofj-ZV-Ekz">
@@ -108,7 +89,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZa-Rn-xJI">
-                                <rect key="frame" x="96.666666666666686" y="381" width="200" height="80"/>
+                                <rect key="frame" x="96.666666666666686" y="398.66666666666669" width="200" height="80"/>
                                 <color key="backgroundColor" red="0.39649360299999997" green="0.2376239732" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="l9M-W5-hwo"/>
@@ -135,9 +116,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oLp-bs-Yfm"/>
-                    <connections>
-                        <segue destination="0nz-2W-0bb" kind="show" identifier="subFirstSegue" id="AUR-M3-tSe"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uF9-oN-qfw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -146,9 +124,9 @@
         <!--Sub First Main View Controller-->
         <scene sceneID="2Eh-MC-9eq">
             <objects>
-                <viewController id="0nz-2W-0bb" customClass="SubFirstMainViewController" customModule="NavigationiOSMentoringSession" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SubFirstMainViewController" id="0nz-2W-0bb" customClass="SubFirstMainViewController" customModule="NavigationiOSMentoringSession" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VCQ-ir-1yU">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAIN STEP 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfo-iR-Xxx">
@@ -158,7 +136,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mpf-b0-Gbo">
-                                <rect key="frame" x="96.666666666666686" y="381" width="200" height="80"/>
+                                <rect key="frame" x="96.666666666666686" y="398.66666666666669" width="200" height="80"/>
                                 <color key="backgroundColor" red="0.39649360299999997" green="0.2376239732" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="6I9-bG-GyO"/>
@@ -185,9 +163,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aB4-n9-6De"/>
-                    <connections>
-                        <segue destination="hJA-OS-Z4V" kind="show" identifier="subSecondSegue" id="qSc-Ya-dKw"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wjc-Kx-6vn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -196,9 +171,9 @@
         <!--Sub Second Main View Controller-->
         <scene sceneID="EGm-jb-us9">
             <objects>
-                <viewController id="hJA-OS-Z4V" customClass="SubSecondMainViewController" customModule="NavigationiOSMentoringSession" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SubSecondMainViewController" id="hJA-OS-Z4V" customClass="SubSecondMainViewController" customModule="NavigationiOSMentoringSession" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xn2-DV-fNe">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAIN STEP 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJ5-DV-8v1">
@@ -208,7 +183,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NK9-Jt-COV">
-                                <rect key="frame" x="96.666666666666686" y="381" width="200" height="80"/>
+                                <rect key="frame" x="96.666666666666686" y="398.66666666666669" width="200" height="80"/>
                                 <color key="backgroundColor" red="0.39649360299999997" green="0.2376239732" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="9W4-dX-XDK"/>
@@ -234,9 +209,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="X1F-hX-Jri"/>
-                    <connections>
-                        <segue destination="L1k-P8-Qsg" kind="show" identifier="toAuth" id="YEc-R0-AuD"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MJQ-N7-CKv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -245,9 +217,9 @@
         <!--Login View Controller-->
         <scene sceneID="XKc-BF-RzC">
             <objects>
-                <viewController id="hWO-Ph-a3Y" customClass="LoginViewController" customModule="NavigationiOSMentoringSession" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="hWO-Ph-a3Y" customClass="LoginViewController" customModule="NavigationiOSMentoringSession" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aPS-Xf-cS3">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="661-V9-aEQ">
@@ -257,7 +229,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRL-6d-4FU">
-                                <rect key="frame" x="96.666666666666686" y="381" width="200" height="80"/>
+                                <rect key="frame" x="96.666666666666686" y="398.66666666666669" width="200" height="80"/>
                                 <color key="backgroundColor" red="0.39649360299999997" green="0.2376239732" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="XBg-iL-NUq"/>
@@ -272,7 +244,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVd-hB-Yep">
-                                <rect key="frame" x="96.666666666666686" y="477" width="200" height="80"/>
+                                <rect key="frame" x="96.666666666666686" y="494.66666666666674" width="200" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="AB8-nQ-hvu"/>
                                     <constraint firstAttribute="height" constant="80" id="L2w-Ts-cdz"/>
@@ -283,7 +255,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="backDidTap:" destination="hWO-Ph-a3Y" eventType="touchUpInside" id="2dE-bM-rLm"/>
-                                    <action selector="endLoginDidTap:" destination="hWO-Ph-a3Y" eventType="touchUpInside" id="Kpd-Wp-WZu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -302,7 +273,6 @@
                     <navigationItem key="navigationItem" id="XBd-W4-XTA"/>
                     <connections>
                         <segue destination="AEH-Je-aB1" kind="unwind" identifier="backToAuth" unwindAction="unwindToAuth:" id="9H5-ob-KDN"/>
-                        <segue destination="3L2-Ra-mPh" kind="show" identifier="mainSegue" id="4Lt-7f-Q8N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DZI-Xk-8bC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -313,9 +283,9 @@
         <!--Registration View Controller-->
         <scene sceneID="HYW-oF-OJW">
             <objects>
-                <viewController id="rDs-gt-dFz" customClass="RegistrationViewController" customModule="NavigationiOSMentoringSession" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationViewController" id="rDs-gt-dFz" customClass="RegistrationViewController" customModule="NavigationiOSMentoringSession" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G82-lT-CWv">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REGISTRATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TuT-GK-VL0">
@@ -325,7 +295,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcd-Bb-3eY">
-                                <rect key="frame" x="96.666666666666686" y="381" width="200" height="80"/>
+                                <rect key="frame" x="96.666666666666686" y="398.66666666666669" width="200" height="80"/>
                                 <color key="backgroundColor" red="0.39649360299999997" green="0.2376239732" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="0eD-DN-Dd8"/>
@@ -340,7 +310,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSK-1i-FRH">
-                                <rect key="frame" x="96.666666666666686" y="477" width="200" height="80"/>
+                                <rect key="frame" x="96.666666666666686" y="494.66666666666674" width="200" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="I6r-wM-bzr"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="yPe-vu-WaY"/>
@@ -351,7 +321,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="backDidTap:" destination="rDs-gt-dFz" eventType="touchUpInside" id="7L0-aA-Vod"/>
-                                    <action selector="endLoginDidTap:" destination="hWO-Ph-a3Y" eventType="touchUpInside" id="TLI-Jd-i80"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -368,19 +337,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zZh-hQ-FBw"/>
-                    <connections>
-                        <segue destination="3L2-Ra-mPh" kind="show" identifier="mainSegue" id="dtP-pG-4ff"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5SM-p4-6Yt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1259" y="195"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="dtP-pG-4ff"/>
-        <segue reference="YEc-R0-AuD"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
