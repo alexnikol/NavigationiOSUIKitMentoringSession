@@ -9,5 +9,6 @@ final class SubFirstMainViewController: UIViewController {
     }
     
     @IBAction func toNext(_ sender: Any) {
+        performSegue(withIdentifier: "subSecondSegue", sender: self)
     }
 }

@@ -8,6 +8,7 @@ final class SubSecondMainViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    @IBAction func toNext(_ sender: Any) {
+    @IBAction func logout(_ sender: Any) {
+        performSegue(withIdentifier: "toAuth", sender: self)
     }
 }

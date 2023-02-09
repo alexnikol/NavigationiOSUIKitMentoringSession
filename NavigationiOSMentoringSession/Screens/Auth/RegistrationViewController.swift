@@ -9,5 +9,10 @@ final class RegistrationViewController: UIViewController {
     }
     
     @IBAction func endRegisterDidTap(_ sender: Any) {
+        performSegue(withIdentifier: "mainSegue", sender: self)
+    }
+    
+    @IBAction func backDidTap(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
     }
 }

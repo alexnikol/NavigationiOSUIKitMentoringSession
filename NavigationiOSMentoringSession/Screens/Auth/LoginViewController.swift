@@ -9,5 +9,10 @@ final class LoginViewController: UIViewController {
     }
     
     @IBAction func endLoginDidTap(_ sender: Any) {
+        performSegue(withIdentifier: "mainSegue", sender: self)
+    }
+    
+    @IBAction func backDidTap(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
     }
 }
