@@ -9,12 +9,8 @@ final class SubSecondMainViewController: UIViewController {
     }
     
     @IBAction func logout(_ sender: Any) {
-        guard let window = view.window else { return }
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let authVC = storyboard.instantiateViewController(identifier: String(describing: AuthViewController.self))
-    
-        let authNavigationController = UINavigationController(rootViewController: authVC)
-        window.rootViewController = authNavigationController
+        let sceneDelegate = view.window?.windowScene?.delegate as? SceneDelegate
+        sceneDelegate?.router?.showAuthFlow()
     }
     
     deinit {

@@ -9,12 +9,8 @@ final class LoginViewController: UIViewController {
     }
     
     @IBAction func endLoginDidTap(_ sender: Any) {
-        guard let window = view.window else { return }
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let mainVC = storyboard.instantiateViewController(identifier: String(describing: MainViewController.self))
-        let navigation = UINavigationController(rootViewController: mainVC)
-        window.rootViewController = navigation
+        let sceneDelegate = view.window?.windowScene?.delegate as? SceneDelegate
+        sceneDelegate?.router?.showMainFlow()
     }
     
     @IBAction func backDidTap(_ sender: Any) {
