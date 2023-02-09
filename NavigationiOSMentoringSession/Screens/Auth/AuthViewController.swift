@@ -13,4 +13,8 @@ final class AuthViewController: UIViewController {
     
     @IBAction func registerDidTap(_ sender: Any) {
     }
+    
+    deinit {
+        print("DEINIT \(self)")
+    }
 }

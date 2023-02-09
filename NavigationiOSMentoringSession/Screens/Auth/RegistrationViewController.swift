@@ -10,4 +10,11 @@ final class RegistrationViewController: UIViewController {
     
     @IBAction func endRegisterDidTap(_ sender: Any) {
     }
+    
+    @IBAction func backDidTap(_ sender: Any) {
+    }
+    
+    deinit {
+        print("DEINIT \(self)")
+    }
 }

@@ -10,4 +10,11 @@ final class LoginViewController: UIViewController {
     
     @IBAction func endLoginDidTap(_ sender: Any) {
     }
+    
+    @IBAction func backDidTap(_ sender: Any) {
+    }
+    
+    deinit {
+        print("DEINIT \(self)")
+    }
 }

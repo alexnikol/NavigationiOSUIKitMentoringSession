@@ -10,4 +10,8 @@ final class MainViewController: UIViewController {
     
     @IBAction func toNext(_ sender: Any) {
     }
+    
+    deinit {
+        print("DEINIT \(self)")
+    }
 }

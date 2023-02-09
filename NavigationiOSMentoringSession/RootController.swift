@@ -7,4 +7,8 @@ final class RootController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    deinit {
+        print("DEINIT \(self)")
+    }
 }

@@ -30,7 +30,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="80"/>
                                         <color key="backgroundColor" red="0.39649360299999997" green="0.2376239732" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="AIV-pI-cco"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="AIV-pI-cco"/>
                                             <constraint firstAttribute="height" constant="80" id="hFu-G9-W1p"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
@@ -45,7 +45,7 @@
                                         <rect key="frame" x="0.0" y="96" width="200" height="80"/>
                                         <color key="backgroundColor" red="0.39649360299999997" green="0.2376239732" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="kwN-2g-Cw0"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="kwN-2g-Cw0"/>
                                             <constraint firstAttribute="height" constant="80" id="wAM-Jz-rLS"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
@@ -92,7 +92,7 @@
                                 <rect key="frame" x="96.666666666666686" y="398.66666666666669" width="200" height="80"/>
                                 <color key="backgroundColor" red="0.39649360299999997" green="0.2376239732" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="l9M-W5-hwo"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="l9M-W5-hwo"/>
                                     <constraint firstAttribute="height" constant="80" id="ml5-0c-4aj"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
@@ -100,7 +100,6 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="endLoginDidTap:" destination="hWO-Ph-a3Y" eventType="touchUpInside" id="zX3-DT-rn6"/>
                                     <action selector="toNext:" destination="3L2-Ra-mPh" eventType="touchUpInside" id="tSb-Dr-KfG"/>
                                 </connections>
                             </button>
@@ -118,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uF9-oN-qfw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="483" y="852"/>
+            <point key="canvasLocation" x="407" y="851"/>
         </scene>
         <!--Sub First Main View Controller-->
         <scene sceneID="2Eh-MC-9eq">
@@ -139,14 +138,13 @@
                                 <color key="backgroundColor" red="0.39649360299999997" green="0.2376239732" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="6I9-bG-GyO"/>
-                                    <constraint firstAttribute="width" constant="200" id="W4R-hd-ItS"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="W4R-hd-ItS"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="NEXT">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="endLoginDidTap:" destination="hWO-Ph-a3Y" eventType="touchUpInside" id="mJz-DX-dVj"/>
                                     <action selector="toNext:" destination="0nz-2W-0bb" eventType="touchUpInside" id="lyj-TH-3fX"/>
                                 </connections>
                             </button>
@@ -164,7 +162,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wjc-Kx-6vn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1152" y="852"/>
+            <point key="canvasLocation" x="1152" y="851"/>
         </scene>
         <!--Sub Second Main View Controller-->
         <scene sceneID="EGm-jb-us9">
@@ -185,14 +183,13 @@
                                 <color key="backgroundColor" red="0.39649360299999997" green="0.2376239732" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="9W4-dX-XDK"/>
-                                    <constraint firstAttribute="width" constant="200" id="VjL-rS-4AD"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="VjL-rS-4AD"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="NEXT">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="endLoginDidTap:" destination="hWO-Ph-a3Y" eventType="touchUpInside" id="KtV-jz-eGu"/>
                                     <action selector="toNext:" destination="hJA-OS-Z4V" eventType="touchUpInside" id="2Zi-q9-UtR"/>
                                 </connections>
                             </button>
@@ -210,7 +207,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MJQ-N7-CKv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1819" y="852"/>
+            <point key="canvasLocation" x="1891" y="851"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="XKc-BF-RzC">
@@ -230,7 +227,7 @@
                                 <rect key="frame" x="96.666666666666686" y="398.66666666666669" width="200" height="80"/>
                                 <color key="backgroundColor" red="0.39649360299999997" green="0.2376239732" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="XBg-iL-NUq"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="XBg-iL-NUq"/>
                                     <constraint firstAttribute="height" constant="80" id="uWJ-5H-DL6"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
@@ -241,12 +238,28 @@
                                     <action selector="endLoginDidTap:" destination="hWO-Ph-a3Y" eventType="touchUpInside" id="4aZ-wY-iTr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qa1-X0-ktt">
+                                <rect key="frame" x="96.666666666666686" y="494.66666666666674" width="200" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="D9v-6S-5jm"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Dle-DS-tlL"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="back">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backDidTap:" destination="hWO-Ph-a3Y" eventType="touchUpInside" id="plZ-6V-oKN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9wz-AQ-IdE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="9wz-AQ-IdE" firstAttribute="trailing" secondItem="661-V9-aEQ" secondAttribute="trailing" constant="16" id="6Nf-ym-qMe"/>
+                            <constraint firstItem="Qa1-X0-ktt" firstAttribute="centerX" secondItem="9wz-AQ-IdE" secondAttribute="centerX" id="DLs-i7-jsI"/>
                             <constraint firstItem="sRL-6d-4FU" firstAttribute="centerY" secondItem="9wz-AQ-IdE" secondAttribute="centerY" id="Wds-9u-TDD"/>
+                            <constraint firstItem="Qa1-X0-ktt" firstAttribute="top" secondItem="sRL-6d-4FU" secondAttribute="bottom" constant="16" id="bkt-m0-3PV"/>
                             <constraint firstItem="661-V9-aEQ" firstAttribute="top" secondItem="9wz-AQ-IdE" secondAttribute="top" constant="40" id="cbY-6x-go0"/>
                             <constraint firstItem="661-V9-aEQ" firstAttribute="leading" secondItem="9wz-AQ-IdE" secondAttribute="leading" constant="16" id="ljI-xj-w1i"/>
                             <constraint firstItem="sRL-6d-4FU" firstAttribute="centerX" secondItem="9wz-AQ-IdE" secondAttribute="centerX" id="wX6-1N-WRD"/>
@@ -275,7 +288,7 @@
                                 <rect key="frame" x="96.666666666666686" y="398.66666666666669" width="200" height="80"/>
                                 <color key="backgroundColor" red="0.39649360299999997" green="0.2376239732" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="0eD-DN-Dd8"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="0eD-DN-Dd8"/>
                                     <constraint firstAttribute="height" constant="80" id="RJF-1y-OKV"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
@@ -286,6 +299,20 @@
                                     <action selector="endRegisterDidTap:" destination="rDs-gt-dFz" eventType="touchUpInside" id="hWp-bH-pr1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ib6-4Q-dyi">
+                                <rect key="frame" x="96.666666666666686" y="494.66666666666674" width="200" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Vud-wk-AkA"/>
+                                    <constraint firstAttribute="height" constant="80" id="xHP-f1-EbH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="back">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backDidTap:" destination="rDs-gt-dFz" eventType="touchUpInside" id="uMq-xg-DSu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WS5-z5-nck"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -293,6 +320,8 @@
                             <constraint firstItem="zcd-Bb-3eY" firstAttribute="centerY" secondItem="WS5-z5-nck" secondAttribute="centerY" id="JwX-Xv-B6T"/>
                             <constraint firstItem="TuT-GK-VL0" firstAttribute="leading" secondItem="WS5-z5-nck" secondAttribute="leading" constant="16" id="PaC-UK-fGz"/>
                             <constraint firstItem="zcd-Bb-3eY" firstAttribute="centerX" secondItem="WS5-z5-nck" secondAttribute="centerX" id="S3j-fQ-pQx"/>
+                            <constraint firstItem="ib6-4Q-dyi" firstAttribute="top" secondItem="zcd-Bb-3eY" secondAttribute="bottom" constant="16" id="Y3C-a2-mdn"/>
+                            <constraint firstItem="ib6-4Q-dyi" firstAttribute="centerX" secondItem="WS5-z5-nck" secondAttribute="centerX" id="iq1-67-QLD"/>
                             <constraint firstItem="TuT-GK-VL0" firstAttribute="top" secondItem="WS5-z5-nck" secondAttribute="top" constant="40" id="mZ3-Mr-40G"/>
                             <constraint firstItem="WS5-z5-nck" firstAttribute="trailing" secondItem="TuT-GK-VL0" secondAttribute="trailing" constant="16" id="sFV-FL-XID"/>
                         </constraints>
