@@ -2,6 +2,10 @@
 
 import UIKit
 
+// UIWindow
+// - UITabbarController
+//   [UINavVC[MainVC], SubFirstVC, SubSecondVC]
+
 final class SubSecondMainViewController: UIViewController {
 
     override func viewDidLoad() {
