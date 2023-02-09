@@ -9,7 +9,8 @@ final class RegistrationViewController: UIViewController {
     }
     
     @IBAction func endRegisterDidTap(_ sender: Any) {
-        performSegue(withIdentifier: "mainSegue", sender: self)
+        let sceneDelegate = view.window?.windowScene?.delegate as? SceneDelegate
+        sceneDelegate?.router?.showMainFlow()
     }
     
     @IBAction func backDidTap(_ sender: Any) {
